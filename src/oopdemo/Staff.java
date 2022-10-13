@@ -28,4 +28,13 @@ public class Staff {
         else
             return 0;
     }
+
+    public void setHoursWorked(int hours) {
+        if (hours > 0)
+            hoursWorked = hours;
+        else {
+            System.out.println("Error: HoursWorked Cannot be Smaller tha Zero");
+            System.out.println("Error: HoursWorked isn't updated");
+        }
+    }
 }
