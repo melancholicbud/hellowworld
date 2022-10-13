@@ -14,6 +14,16 @@ class MyClass {
         }
         return a;
     }
+
+    public void passPrimitive(int primitivePara) {
+        primitivePara = 10;
+        System.out.println("Value inside method: = " + primitivePara);
+    }
+
+    public void passReference(int[] refPara) {
+        refPara[1] = 5;
+        System.out.println("Value inside method = " + refPara[1]);
+    }
 }
 
 public class ArrayMethodDemo {
@@ -25,5 +35,15 @@ public class ArrayMethodDemo {
 
         int[] myArray2 = amd.returnArray();
         System.out.println(Arrays.toString(myArray2));
+
+        int number = 2;
+        System.out.println("number before = " + number);
+        amd.passPrimitive(number);
+        System.out.println("number after = " + number);
+        System.out.println("\n");
+
+        System.out.println("myArray[1] before = " + myArray[1]);
+        amd.passReference(myArray);
+        System.out.println("myArray[1] after = " + myArray[1]);
     }
 }
