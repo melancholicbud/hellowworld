@@ -41,4 +41,10 @@ public class Staff {
     public int getHoursWorked() {
         return hoursWorked;
     }
+
+    public Staff(String name) {
+        nameOfStaff = name;
+        System.out.println("\n" + nameOfStaff);
+        System.out.println("--------------------------");
+    }
 }
