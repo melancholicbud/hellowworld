@@ -37,4 +37,8 @@ public class Staff {
             System.out.println("Error: HoursWorked isn't updated");
         }
     }
+
+    public int getHoursWorked() {
+        return hoursWorked;
+    }
 }
