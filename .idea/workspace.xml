@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cda8d971-7e18-4639-8aae-3f93680f5bfd" name="Changes" comment="adding IfDemo class for if-else statement showcase">
-      <change afterPath="$PROJECT_DIR$/src/errordemo2/ErrorDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oopdemo/ObjectOrientedDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oopdemo/Staff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
