@@ -10,5 +10,9 @@ public class InheritanceDemo {
 
         mem1.displayMemberInfo();
         mem2.displayMemberInfo();
+
+        mem1.setDiscount();
+        mem1.calculateAnnualFee();
+        mem1.displayMemberInfo();
     }
 }
