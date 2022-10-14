@@ -20,4 +20,24 @@ public class Member {
         memberID = pMemberID;
         memberSince = pMemberSince;
     }
+
+    public double getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount() {
+        Scanner input = new Scanner(System.in);
+        String password;
+        System.out.println("Please, enter the admin password");
+        password = input.nextLine();
+
+        if (!password.equals("abcd")) {
+            System.out.println("Invalid password. You don't have" +
+                    "authority to edit the discount");
+        }
+        else {
+            System.out.println("Please, enter the discount: ");
+            discount = input.nextInt();
+        }
+    }
 }
