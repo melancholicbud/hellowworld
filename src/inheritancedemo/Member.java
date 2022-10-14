@@ -8,4 +8,16 @@ public class Member {
     private int memberID;
     private int memberSince;
     private int discount;
+
+    public Member() {
+        System.out.println("Parent Constructor with no parameter");
+    }
+
+    public Member(String pName, int pMemberID, int pMemberSince) {
+        System.out.println("Parent Constructor with 3 parameters");
+
+        name = pName;
+        memberID = pMemberID;
+        memberSince = pMemberSince;
+    }
 }
