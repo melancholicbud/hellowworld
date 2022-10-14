@@ -6,7 +6,8 @@ import java.util.List;
 public class ListDemo {
     public static void main(String[] args) {
 //        List<Integer> userAgeList = new ArrayList<>();
-        List<Integer> userAgeList = new LinkedList<>();
+//        List<Integer> userAgeList = new LinkedList<>();
+        LinkedList<Integer> userAgeList = new LinkedList<>();
         userAgeList.add(40);
         userAgeList.add(53);
         userAgeList.add(45);
