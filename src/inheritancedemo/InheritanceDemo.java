@@ -23,5 +23,10 @@ public class InheritanceDemo {
         clubMembers[3] = new VIPMember("Caroline", 4, 2012);
         clubMembers[4] = new VIPMember("Evelyn", 5, 2012);
         clubMembers[5] = new Member("Yvonne", 6, 2013);
+
+        for (Member m : clubMembers) {
+            m.calculateAnnualFee();
+            m.displayMemberInfo();
+        }
     }
 }
