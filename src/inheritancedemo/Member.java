@@ -40,4 +40,15 @@ public class Member {
             discount = input.nextInt();
         }
     }
+
+    public void displayMemberInfo() {
+        System.out.println("Member Name: " + name);
+        System.out.println("Member ID: " + memberID);
+        System.out.println("Member Since: " + memberSince);
+        System.out.println("Annual Fee: " + annualFee);
+    }
+
+    public void calculateAnnualFee() {
+        annualFee = 0;
+    }
 }
