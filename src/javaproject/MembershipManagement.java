@@ -90,7 +90,72 @@ public class MembershipManagement {
 
             fees = cal.calculateFees(club);
 
-            
+            mbr = new SingleClubMember('S', memberID, name, fees, club);
+            m.add(mbr);
+            mem = mbr.toString();
+
+            System.out.println("\nSTATUS: Single Club Member added\n");
         }
+        else {
+            cal = (n) -> {
+                if (n == 4)
+                    return 1200;
+                else
+                    return -1;
+            };
+
+            fees = cal.calculateFees(club);
+
+            mbr = new MultiClubMember('M', memberID, name, fees, 100);
+            m.add(mbr);
+            mem = mbr.toString();
+
+            System.out.println("\nSTATUS: Multi Club Member added\n");
+        }
+        return mem;
+    }
+
+    public void removeMember(LinkedList<Member> m) {
+        int memberID;
+
+        System.out.print("\nEnter Member ID to remove: ");
+        memberID = getIntInput();
+
+        for (int i = 0; i < m.size(); i++) {
+            if (m.get(i).getMemberID() == memberID) {
+                m.remove(i);
+                System.out.print("\nMember removed\n");
+                return;
+            }
+        }
+        System.out.println("\nMember ID not found\n");
+    }
+
+    public void printMemberInfo(LinkedList<Member> m) {
+        int memberID;
+
+        System.out.println("\nEnter Member ID to display information: \n");
+        memberID = getIntInput();
+
+        for(int i = 0; i < m.size(); i++) {
+            if (m.get(i).getMemberID() == memberID) {
+                String[] memberInfo = m.get(i).toString().split(", ");
+
+                System.out.println("\n\nMember type = " + memberInfo[0]);
+                System.out.println("Member ID = " + memberInfo[1]);
+                System.out.println("Member Name = " + memberInfo[2]);
+                System.out.println("Membership Fees = " + memberInfo[3]);
+
+                if (memberInfo[0].equals("S")) {
+                    System.out.println("Club ID = " + memberInfo[4]);
+                }
+                else {
+                    System.out.println("Membership Points = " + memberInfo[4]);
+                }
+                return;
+            }
+        }
+
+        System.out.println("\nMember ID not found\n");
     }
 }
