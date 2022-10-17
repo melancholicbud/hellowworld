@@ -44,4 +44,9 @@ public class Member {
     public double getFees() {
         return fees;
     }
+
+    @Override
+    public String toString() {
+        return memberType + ", " + memberID + ", " + name + ", " + fees;
+    }
 }
