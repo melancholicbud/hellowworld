@@ -83,6 +83,8 @@ public class MembershipManagement {
                         return 950;
                     case 3:
                         return 1000;
+                    case 4:
+                        return 1500;
                     default:
                         return -1;
                 }
