@@ -64,7 +64,7 @@ public class MembershipManagement {
         System.out.print("\nPlease, enter the member's clubID: ");
         club = getIntInput();
 
-        while(club < 1 || club > 4) {
+        while(club < 1 || club > 5) {
             System.out.println("\nInvalid Club ID. Please, try again: ");
             club = getIntInput();
         }
