@@ -2,7 +2,9 @@ package filehandlingdemo;
 import java.io.*;
 
 public class FileHandlingDemo {
+
     public static void main(String[] args) {
+
         String line;
         BufferedReader reader = null;
 
@@ -13,16 +15,13 @@ public class FileHandlingDemo {
                 System.out.println(line);
                 line = reader.readLine();
             }
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
-        }
-        finally {
+        } finally {
             try {
                 if (reader != null)
                     reader.close();
-            }
-            catch (IOException e) {
+            } catch (IOException e) {
                 System.out.println(e.getMessage());
             }
         }
